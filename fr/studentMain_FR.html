@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>École Secondaire ZOE</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
+        <link rel="stylesheet" href="../css/custom.css">
+
+    </head>
+    <body onload="displayStudentName(); updateQuizList()">
+
+        <div class="section values backgroundImage02">
+            <!-- Menu -->
+            <div id="zeoMenu">
+                <div id="menuSidePanel" class="zeoLink sidepanel">
+                    <a href="javascript:void(0)" class="zeoLink closebtn"
+                       onclick="closeNav()">&#735;</a>
+                    <a class="zeoLink" href="studentMain_FR.html">Page&nbsp;Principal</a>
+                    <a class="zeoLink" href="studentGrades_FR.html">Notes</a>
+                    <a class="zeoLink" href="studentFlash_FR.html">Cartes&nbsp;d'Étude</a>
+                    <hr style="margin:5px 0">
+                    <a class="zeoLink" href="studentQuiz_FR.html">Hist:358</a>
+                    <a class="zeoLink logOut" href="../index.html">Déconnecterez</a>
+                </div>
+                <button class="zeoLink" id="mainMenuButton" onclick="openNav()">&#9776;</button>
+            </div>
+            <div class="container">
+                <h1 id="studentName" style="color: white;"></h1>
+            </div>
+        </div>
+
+        <!-- Primary Page Layout -->
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns" style="margin-top: 10%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <h5>Lorem ipsum dolor.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto dolore ducimus quo
+                        sit. Quas.</p>
+                </div>
+                <div class="four columns">
+                    <h5>Lorem ipsum dolor.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto dolore ducimus quo
+                        sit. Quas.</p>
+                </div>
+                <div class="four columns">
+                    <h5>Lorem ipsum dolor.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto dolore ducimus quo
+                        sit. Quas.</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5rem">
+                <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem corporis, cum cumque
+                    dolor dolorem dolores ea enim eos error et eveniet, exercitationem explicabo fuga illum
+                    laudantium magni nam neque quo quod, repellendus rerum sed totam velit veritatis voluptatibus
+                    voluptatum!</p>
+            </div>
+        </div>
+        <div style="background-color: #f4f4f4; padding: 2rem 0;">
+            <div class="container">
+                <div class="row">
+                    <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem corporis, cum cumque
+                        dolor dolorem dolores ea enim eos error et eveniet, exercitationem explicabo fuga illum
+                        laudantium magni nam neque quo quod, repellendus rerum sed totam velit veritatis voluptatibus
+                        voluptatum!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="margin-top: 5rem">
+                <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem corporis, cum cumque
+                    dolor dolorem dolores ea enim eos error et eveniet, exercitationem explicabo fuga illum
+                    laudantium magni nam neque quo quod, repellendus rerum sed totam velit veritatis voluptatibus
+                    voluptatum!</p>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+
+        <script src="../js/menu.js"></script>
+        <script src="../js/login.js"></script>
+        <script src="../js/studentMain.js"></script>
+
+        <!-- End Document -->
+    </body>
+</html>

@@ -1,0 +1,198 @@
+/* font import */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../resources/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../resources/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../resources/Raleway-SemiBold.ttf);
+}
+
+
+/* custom CSS*/
+
+.loginPanel {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #0005;
+}
+
+.buttonTopMargin {
+    margin-top: 2rem;
+}
+
+input.radioBuffer {
+    margin-right: .5rem;
+    margin-left: 3rem;
+}
+
+fieldset.quiz {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label.inline {
+    display: inline;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.centerScreen {
+    align-self: center;
+}
+
+.buttonRightDoubleMargin {
+    margin-right: 1rem;
+}
+
+input.correctAnswer {
+    border-color: #c7e7a5;
+}
+
+input.wrongAnswer {
+    border-color: #f6d6d6;
+}
+
+label[name="answer"] {
+    display: inline;
+}
+
+.backgroundImage01 {
+    background: url("../images/loginImage.jpg") no-repeat fixed center top;
+    background-size: cover;
+    height: 100%;
+    min-height: 540px;
+    background-position-x: left
+}
+
+.backgroundImage02 {
+    background: url("../images/hallway.jpg") no-repeat fixed center top;
+    background-size: cover;
+    height: 100%;
+    min-height: 540px;
+    background-position-x: left
+}
+
+.backgroundImage03 {
+    background: url("../images/graduation.jpg") no-repeat fixed center top;
+    background-size: cover;
+    height: 100%;
+    min-height: 540px;
+    background-position-x: left
+}
+
+.backgroundImage04 {
+    background: url("../images/picturesInaBox.jpg") no-repeat fixed center top;
+    background-size: cover;
+    height: 100%;
+    min-height: 540px;
+    background-position-x: left
+}
+
+
+.greyBack {
+
+}
+
+/* Student Flashcards */
+
+#questionInput,
+#answerInput,
+#cancelButton,
+#saveButton,
+#addCardButton,
+#deleteCardButton,
+#showAnswerButton,
+#nextQuestionButton
+{
+    display: none;
+}
+
+/* NAVIGATION */
+
+#zeoMenu .sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+#zeoMenu .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    display: block;
+}
+
+#zeoMenu a.zeoLink:hover {
+    color: #1EAEDB;
+}
+
+#zeoMenu a.zeoLink.closebtn {
+    font-size: 5rem;
+    line-height: 1rem;
+    margin-top: 2.5rem;
+    margin-left: -1.5rem;
+}
+
+#zeoMenu .openbtn.zeoLink {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #7a7a7a;
+    padding: 10px 15px;
+    border: none;
+}
+
+#mainMenuButton {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+#zeoMenu div.slideMenu.zeoLink {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #7a7a7a;
+    background-color: #e3e3e3;
+    display: block;
+    transition: 0.1s;
+}
+
+#zeoMenu a.logOut.zeoLink {
+    color: #fff;
+    background-color: #e38484;
+}
+
+#zeoMenu a.logOut.zeoLink:hover {
+    color: #fff;
+    background-color: #e55656;
+}
+

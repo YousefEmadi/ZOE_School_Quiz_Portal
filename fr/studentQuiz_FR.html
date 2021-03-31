@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>École Secondaire ZOE</title>
+        <meta name="description" content="Quiz taking page">
+        <meta name="author" content="ZOE">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
+        <link rel="stylesheet" href="../css/custom.css">
+
+    </head>
+    <body id="quizPage">
+
+        <!-- This page does not contain a menu -->
+
+        <!-- Primary Page Layout -->
+        <div class="container">
+            <div class="row">
+                <div class="twelve column" style="margin-top: 10%">
+                    <fieldset>
+                        <legend id="myQuizTitle"></legend>
+                        <p id="myQuizCourseName"></p>
+                        <p id="myQuizTime"></p>
+                        <p id="numberOfQuestions"></p>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve column" style="margin-top: 2rem;">
+                    <h3>Histoire 324: Quiz 5</h3>
+                    <fieldset class="quiz">
+                        <div id="question1"></div>
+                        <p>Quelle est la capitale de la France?</p>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer1A"
+                                   name="answer1">
+                            <label for="answer1A" class="inline">Paris</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer1B"
+                                   name="answer1">
+                            <label for="answer1B" class="inline">Berlin</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer1C"
+                                   name="answer1">
+                            <label for="answer1C" class="inline">Londres</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer1D"
+                                   name="answer1">
+                            <label for="answer1D" class="inline">Saint-Louis</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="quiz">
+                        <div id="question2"></div>
+                        <p>Qui a été le premier président élu de la Cinquième
+                            République?</p>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer2A"
+                                   name="answer2">
+                            <label for="answer2A" class="inline">Nicolas Sarkozy</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer2B"
+                                   name="answer2">
+                            <label for="answer2B" class="inline">Napoleon
+                                Bonaparte</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer2C"
+                                   name="answer2">
+                            <label for="answer2C" class="inline">Charles De Gaulle</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="radioBuffer" id="answer2D"
+                                   name="answer2">
+                            <label for="answer2D" class="inline">Vladimir Lenin</label>
+                        </div>
+                    </fieldset>
+                    <div class="centerAlign">
+                        <button class="button-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+
+        <script src="../js/quizGenerator.js"></script>
+
+        <!-- End Document -->
+
+    </body>
+</html>
