@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>ZOE High School</title>
+        <meta name="description" content="Quiz taking page">
+        <meta name="author" content="ZOE">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+    <body id="quizPage">
+
+        <!-- This page does not contain a menu -->
+
+        <!-- Primary Page Layout -->
+        <div class="container">
+            <div class="row">
+                <div class="twelve column" style="margin-top: 5%">
+                    <fieldset>
+                        <p id="myQuizCourseName"></p>
+                        <p id="myQuizTime"></p>
+                        <p id="numberOfQuestions"></p>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div id="quizBody" class="twelve column" style="margin-top: 2rem;">
+                    <h3 id="myQuizTitle"></h3>
+<!--                    <fieldset class="quiz">-->
+<!--                        <div id="question1"></div>-->
+<!--                        <p>What is the capital of France?</p>-->
+<!--                        <div>-->
+<!--                            <input type="radio" class="radioBuffer" id="answer1A"-->
+<!--                                   name="answer1">-->
+<!--                            <label for="answer1A" class="inline">Paris</label>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <input type="radio" class="radioBuffer" id="answer1B"-->
+<!--                                   name="answer1">-->
+<!--                            <label for="answer1B" class="inline">Berlin</label>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <input type="radio" class="radioBuffer" id="answer1C"-->
+<!--                                   name="answer1">-->
+<!--                            <label for="answer1C" class="inline">London</label>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <input type="radio" class="radioBuffer" id="answer1D"-->
+<!--                                   name="answer1">-->
+<!--                            <label for="answer1D" class="inline">Saint-Louis</label>-->
+<!--                        </div>-->
+<!--                    </fieldset>-->
+                </div>
+                    <div id="buttonHolder" class="centerAlign" style="margin: 5rem;">
+                        <button type="submit" class="button-primary" onclick="submitQuiz()">Submit the Quiz</button>
+                    </div>
+
+            </div>
+        </div>
+
+        <!-- Javascript -->
+
+        <script src="js/quizGenerator.js"></script>
+
+        <!-- End Document -->
+
+    </body>
+</html>

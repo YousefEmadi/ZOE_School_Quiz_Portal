@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>ZOE High School</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+    <body onload="populateDecksOnLoad()">
+
+        <!-- Menu -->
+        <div id="zeoMenu">
+            <div id="menuSidePanel" class="zeoLink sidepanel">
+                <a href="javascript:void(0)" class="zeoLink closebtn"
+                   onclick="closeNav()">&#735;</a>
+                <a class="zeoLink" href="studentMain.html">Main</a>
+                <a class="zeoLink" href="studentGrades.html">Grades</a>
+                <a class="zeoLink" href="studentFlash.html">Flashcards</a>
+                <hr style="margin:5px 0">
+                <a class="zeoLink" href="studentQuiz.html">Hist:358</a>
+                <a class="zeoLink logOut" href="index.html">Log&nbsp;Out</a>
+            </div>
+            <button class="zeoLink openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <!-- Primary Page Layout -->
+        <div class="container">
+            <h1>Flashcards</h1>
+            <div id="listOfDecks">
+                <a class="button" href="#">MATH:301</a>
+                <a class="button" href="#">BIOL:314</a>
+                <a class="button" href="#">ENGL:321</a>
+                <a class="button" href="#">HIST:358</a>
+                <a class="button" href="#">FREN:325</a>
+                <a class="button" href="#">PHYS:331</a>
+            </div>
+            <div class="row">
+                <div class="twelve columns" style="margin-top: 10%">
+                    <h3 id="studentName"></h3>
+                </div>
+            </div>
+            <div class="row" id="flashcard"
+                 style="padding: 3rem; height: 10vh;">
+                <div class="twelve columns">
+
+                    <label for="questionInput" aria-label="Type your question here"></label>
+                    <textarea id="questionInput" class="u-full-width"
+                              placeholder="Type your question here"></textarea>
+                    <span id="questionDisplay">&nbsp;</span>
+
+                </div>
+            </div>
+            <div class="row" style="padding: 3rem; height: 10vh;">
+                <div class="twelve columns">
+
+                    <label for="answerInput" aria-label="Type your answer here"></label>
+                    <textarea id="answerInput" class="u-full-width" placeholder="Type your answer here"></textarea>
+                    <span id="answerDisplay">&nbsp;</span>
+
+                </div>
+            </div>
+            <div class="row" style="padding: 1rem; height: 10vh;">
+
+                <div class="four columns">&nbsp;</div>
+                <div class="four columns">
+                    <button class="button u-full-width" id="nextQuestionButton" onclick="nextQuestion()">Next
+                    </button>
+                    <button class="button u-full-width" id="showAnswerButton" onclick="showAnswer()">Answer
+                    </button>
+
+                    <button id="addCardButton" class="u-full-width" onclick="addNewCard()">Add Card</button>
+                    <button id="saveButton" class="u-full-width" onclick="saveNewCard()">Save Card</button>
+                    <button id="deleteCardButton" class="u-full-width" onclick="deleteCard()">Delete
+                    </button>
+                    <button id="cancelButton" class="u-full-width" onclick="nextQuestion()">Cancel</button>
+                </div>
+                <div class="four columns">&nbsp;</div>
+
+            </div>
+
+        </div>
+        <!-- Javascript -->
+
+        <script src="js/menu.js"></script>
+        <script src="js/flashCard.js"></script>
+
+        <!-- End Document -->
+    </body>
+</html>

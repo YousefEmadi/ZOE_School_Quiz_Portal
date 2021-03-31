@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>ZOE High School</title>
+        <meta name="description" content="Login Page for Students and Faculty">
+        <meta name="author" content="ZOE">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+    <body onload="populateOnLoad()">
+
+
+        <!-- Account creation form -->
+        <div class="container">
+            <div class="row">
+                <div class="one-half column" style="margin-top: 25%">
+                    <h4>Create Account</h4>
+                    <label for="firstName" aria-label="enter the user's first name"></label>
+                    <input type="text" id="firstName" name="userName"
+                           placeholder="First Name">
+                    <label for="lastName" aria-label="enter the user's family name"></label>
+                    <input type="text" id="lastName" name="userName"
+                           placeholder="Last Name">
+                    <label for="userName" aria-label="enter user's user name"></label>
+                    <input type="email" id="userName" name="userName"
+                           placeholder="User Name">
+                    <label for="password" aria-label="enter the user's password"></label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Password"><br>
+                    <label for="type" aria-label="select user type"></label>
+                    <select id="type">
+                        <option value="empty">User Type</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select><br>
+                    <label for="language" aria-label="select the user's main language"></label>
+                    <select id="language">
+                        <option value="empty">Language</option>
+                        <option value="english">English</option>
+                        <option value="french">French</option>
+                    </select><br>
+                    <label for="password"></label>
+                    <label for="masterPassword" aria-label="enter administrator password"></label>
+                    <input type="password" id="masterPassword" name="masterPassword"
+                           placeholder="Admin Password"><br>
+                    <button class="button-primary" type="submit"
+                            onclick="createAccount()">Enter
+                    </button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+
+        <script src="js/login.js"></script>
+        <!-- End Document -->
+    </body>
+</html>

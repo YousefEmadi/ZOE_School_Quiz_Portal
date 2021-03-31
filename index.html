@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>ZOE High School</title>
+        <meta name="description" content="Login Page for Students and Faculty">
+        <meta name="author" content="ZOE">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+
+    <body onload="populateOnLoad()" class="backgroundImage01">
+
+        <!-- This page does not contain a menu -->
+
+        <!-- Primary Page Layout -->
+        <div class="container">
+            <div class="row" style="margin-top: 20%">
+                <div class="four columns">&nbsp;</div>
+                <div class="four columns">
+                    <fieldset style="background-color: white; padding: 3rem;
+                    border-radius: 10px" class="loginPanel">
+                        <h4>Login</h4>
+                        <label for="userName" aria-label="User name"></label>
+                        <input type="text" id="userName" name="userName"
+                               placeholder="User Name" class="u-full-width"><br>
+                        <label for="password" aria-label="User name"></label>
+                        <input type="password" id="password" placeholder="Password"
+                               name="password" class="u-full-width"><br>
+                        <button class="button-primary" type="submit" onclick="logIn()">
+                            Enter
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="four columns">&nbsp;</div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+
+        <script src="js/login.js"></script>
+
+        <!-- End Document -->
+    </body>
+</html>

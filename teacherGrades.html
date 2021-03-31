@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>ZOE High School</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+    <body>
+
+        <!-- Menu -->
+        <div id="zeoMenu">
+            <div id="menuSidePanel" class="zeoLink sidepanel">
+                <a href="javascript:void(0)" class="zeoLink closebtn"
+                   onclick="closeNav()">&#735;</a>
+                <a class="zeoLink" href="teacherMain.html">Main</a>
+                <a class="zeoLink" href="teacherQuiz.html">Quiz&nbsp;Maker</a>
+                <a class="zeoLink logOut" href="index.html">Log&nbsp;Out</a>
+            </div>
+            <button class="zeoLink openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <!-- Primary Page Layout -->
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns" style="margin-top: 10%">
+                    <h4>Class Grades</h4>
+                    <h5>Math 104</h5>
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Ave</th>
+                                <th>Q1</th>
+                                <th>Q2</th>
+                                <th>Q3</th>
+                                <th>Q4</th>
+                                <th>Q5</th>
+                                <th>Q6</th>
+                                <th>Q7</th>
+                                <th>Q8</th>
+                                <th>Q9</th>
+                                <th>Q10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Yousef Emadi</td>
+                            <td>86%</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Jerome Olivier</td>
+                            <td>68%</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Zampino</td>
+                            <td>80%</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Ti Vu</td>
+                            <td>82%</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Math 202</h5>
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Ave</th>
+                                <th>Q1</th>
+                                <th>Q2</th>
+                                <th>Q3</th>
+                                <th>Q4</th>
+                                <th>Q5</th>
+                                <th>Q6</th>
+                                <th>Q7</th>
+                                <th>Q8</th>
+                                <th>Q9</th>
+                                <th>Q10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Yousef Emadi</td>
+                            <td>86%</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Jerome Olivier</td>
+                            <td>68%</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Zampino</td>
+                            <td>80%</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Ti Vu</td>
+                            <td>82%</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Math 301</h5>
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Ave</th>
+                                <th>Q1</th>
+                                <th>Q2</th>
+                                <th>Q3</th>
+                                <th>Q4</th>
+                                <th>Q5</th>
+                                <th>Q6</th>
+                                <th>Q7</th>
+                                <th>Q8</th>
+                                <th>Q9</th>
+                                <th>Q10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Yousef Emadi</td>
+                            <td>86%</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Jerome Olivier</td>
+                            <td>68%</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Zampino</td>
+                            <td>80%</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Ti Vu</td>
+                            <td>82%</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Math 403</h5>
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Ave</th>
+                                <th>Q1</th>
+                                <th>Q2</th>
+                                <th>Q3</th>
+                                <th>Q4</th>
+                                <th>Q5</th>
+                                <th>Q6</th>
+                                <th>Q7</th>
+                                <th>Q8</th>
+                                <th>Q9</th>
+                                <th>Q10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Yousef Emadi</td>
+                            <td>86%</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Jerome Olivier</td>
+                            <td>68%</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Zampino</td>
+                            <td>80%</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Ti Vu</td>
+                            <td>82%</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Math 505</h5>
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Ave</th>
+                                <th>Q1</th>
+                                <th>Q2</th>
+                                <th>Q3</th>
+                                <th>Q4</th>
+                                <th>Q5</th>
+                                <th>Q6</th>
+                                <th>Q7</th>
+                                <th>Q8</th>
+                                <th>Q9</th>
+                                <th>Q10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Yousef Emadi</td>
+                            <td>86%</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Jerome Olivier</td>
+                            <td>68%</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Zampino</td>
+                            <td>80%</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Ti Vu</td>
+                            <td>82%</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+
+        <script src="js/menu.js"></script>
+        <!-- End Document -->
+    </body>
+</html>

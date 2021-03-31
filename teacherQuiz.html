@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
+        <title>ZOE High School</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+    <body onload="getQuestionBank();getQuizBank();questionDivOff();quizDivOff();updateQuizList()">
+
+        <!-- Menu -->
+        <div id="zeoMenu">
+            <div id="menuSidePanel" class="zeoLink sidepanel">
+                <a href="javascript:void(0)" class="zeoLink closebtn"
+                   onclick="closeNav()">&#735;</a>
+                <a class="zeoLink" href="teacherMain.html">Main</a>
+                <a class="zeoLink" href="studentGrades.html">Class&nbsp;Grades</a>
+                <a class="zeoLink logOut" href="index.html">Log&nbsp;Out</a>
+            </div>
+            <button class="zeoLink openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <!-- Primary Page Layout -->
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns" style="margin-top: 20%">
+                    <h1>Quiz Maker</h1>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 2rem">
+                <div class="twelve columns">
+                    <!-- Question Creating Part-->
+                    <label for="courseName" aria-label="select course name"></label>
+                    <select name="courseName" id="courseName" class="must">
+                        <option value="">Class</option>
+                        <option value="History">History</option>
+                        <option value="Math">Math</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Science">Science</option>
+                        <option value="Art">Art</option>
+                        <option value="Literature">Literature</option>
+                    </select>
+                    <button class="button" onclick="newQuiz()">new quiz</button>
+                    &nbsp;&nbsp;
+                    <button class="" onclick="questionDivOff();quizDivOn();showQuiz()">
+                        view quiz
+                    </button>
+
+                    <label for="quizName" aria-label="select quiz"></label>
+                    <select name="quizName" id="quizName">
+                        <!--will be filled via updateQuizList()-->
+                    </select>
+                </div>
+            </div>
+
+            <div id="questionDiv"> <!--by default display:none-->
+                <h4>Question <span id="questionNumber">1</span></h4>
+                <label for="questionDescription" aria-label="enter question"></label>
+                <input type="text" id="questionDescription" class="u-full-width must"
+                       placeholder="&#x1F914; enter question">
+                <label for="correctAnswer" aria-label="correct answer"></label>
+                <input type="text" id="correctAnswer"
+                       class="correctAnswer u-full-width must"
+                       placeholder="&#128522; correct answer">
+                <label for="wrongAnswer1" aria-label="first wrong answer"></label>
+                <input type="text" id="wrongAnswer1" class="wrongAnswer u-full-width must"
+                       placeholder="&#x1F61E; 1st wrong answer">
+                <label for="wrongAnswer2" aria-label="second wrong answer"></label>
+                <input type="text" id="wrongAnswer2" class="wrongAnswer u-full-width must"
+                       placeholder="&#x1F61E; 2nd wrong answer">
+                <label for="wrongAnswer3" aria-label="third wrong answer"></label>
+                <input type="text" id="wrongAnswer3" class="wrongAnswer u-full-width must"
+                       placeholder="&#x1F61E; 3rd wrong answer">
+
+                <div class="buttonTopMargin">
+                    <button class="button"
+                            onclick="saveQuestion();newQuestion();pushToQuestionBank();">new
+                        question
+                    </button>
+                </div>
+
+                <div class="buttonTopMargin centerAlign">
+<!--                    <button class="button-primary"-->
+<!--                            onclick="saveQuestion();-->
+<!--                            saveQuiz();pushToQuestionBank();pushToQuizBank();goToTeacherQuizMainPage()">-->
+<!--                        Save-->
+<!--                    </button>-->
+                    <button class="button-primary"
+                            onclick="goToTeacherQuizMainPage();saveQuiz();pushToQuizBank()">Done
+                    </button>
+                </div>
+
+            </div>
+            <!-- end of questionDiv -->
+
+            <div id="quizDiv">
+
+            </div> <!--by default display:none-->
+
+        </div>
+
+        <!-- Javascript -->
+
+        <script src="js/teacherQuiz.js"></script>
+        <script src="js/menu.js"></script>
+
+        <!-- End Document -->
+    </body>
+</html>
