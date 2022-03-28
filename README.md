@@ -6,6 +6,7 @@ https://zoeschool.netlify.app/
 
 <img width="812" alt="image" src="https://user-images.githubusercontent.com/63328419/160435406-3b3e6153-0c8f-4df0-b7fd-097c36659eeb.png">
 
+https://www.youtube.com/watch?v=eao0hjOTnb0
 
 Purpose
 The website is intended to be an educational tool where users can have access to flashcards and exams for different school subjects. 
